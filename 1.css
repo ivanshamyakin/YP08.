@@ -1,0 +1,151 @@
+*
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+header {
+    background-color: rgb(53, 163, 110);
+}
+
+h1, h2, h3 {
+    padding: 5px;
+}
+
+
+.nap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;                 
+    width: 100%;               
+    padding: 20px 10px; 
+}
+
+.nap-card {
+    display: flex;
+    flex-direction: column; 
+    width: 33.33%;          
+    max-width: 400px;       
+}
+
+.nap-card img {
+    width: 100%;
+    height: 350px;         
+    object-fit: cover;      
+    border-radius: 20px;
+    display: block;
+}
+
+.nap-card p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    text-align: center; 
+    margin-top: 15px;       
+}
+
+
+.allcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px 10px;
+}
+
+.photo1 {
+    width: 300px;           
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: 20px;
+    font-size: 16px; 
+    line-height: 1.5; 
+    text-align: center; 
+}
+
+.photo1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;   
+}
+
+.photo1 p {
+    margin: 15px 0;
+}
+
+.my-button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 100%;            
+    height: 50px;           
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto;       
+}
+
+.my-button:hover { background-color: red; }
+.my-button:active { background-color: purple; }
+
+
+footer {
+    background-color: rgb(53, 163, 110);
+    margin-top: 30px;
+}
+
+.shapka, .podval {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a { text-decoration: none; color: black; font-weight: bold; }
+a:hover { color: aqua; }
+a:focus { color: brown; }
+a:active { color: yellow; }
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+
+    header, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .shapka, .podval {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nap-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+
+    .photo1 {
+        width: 100%;
+        max-width: 350px;
+    }
+}
